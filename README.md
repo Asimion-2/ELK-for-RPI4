@@ -22,20 +22,34 @@ Creating a functional ELK stack that reads Egress data via USB on a Raspberry pi
 >
 > Here we are using Ubuntu 20.04 Server edition. [Download here](https://ubuntu.com/download/raspberry-pi)
 >
-> If havent already done this please download the ISO image and flash it to your SD card via flashing software for example Rufus.[Rufus Download](https://rufus.ie/)
+> If havent already done this please download the ISO image and flash it to your SD card via flashing software for example Rufus. [Rufus Download](https://rufus.ie/)
 >
 > Your Pi must also be connect to your personal network via Wifi or Lan. In this instence we will be using Lan.
 
 
 
-## **Starting up**
+## **Setting up**
 Personal I created separate directories for each part of my stack.
 
 You can do this via the mkdir command. (Ex: mkdir data, mkdir Elastic, mkdir Kibana, mkdir Logstash)
 
 ### Downloading the appropriate software 
-You can find all the downloads for each system architecture at [this link](https://www.elastic.co/downloads/)
+You can find all the downloads for each system architecture at [This link](https://www.elastic.co/downloads/)
 
+Since we are on linux I will be using the curl command to download each part of the stack into their respective directorys 
+- Elastic Search
+  - Curl -O https://tinyurl.com/y9p47ycu
+- Kibana 
+  - Curl -O https://tinyurl.com/y98v5eyk
+- LogStash 
+  - Curl -O https://tinyurl.com/yajvt5dd
+  
+  
+  
+  
+  
+  
+  
 
 
 
