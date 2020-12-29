@@ -89,6 +89,38 @@ I will use the command sudo nano file/name/here but feel free to use whichever t
   
 - Inside the bin directory create a file called logstash-json.conf and paste the follwing code [here](https://github.com/Asimion-2/ELK-for-RPI4/blob/main/logstash-json)
 
+**CD to the directory where you would like to store the files were the data will be saved**
+
+- Create a json file
+  - Please make sure to use the command chmod 777 filename.json so that the stask can access the file
+   
+*Besure to change the file path code in the logstash-json.conf file to match the location of newly created json file*
+
+
+## **Execution, optimization, and acquiring data**
+We are almost done! Now we need to set up or stack to load on boot and automatically collect data
+
+First things first is we will need to open the port for kibana so we can access the web page. 
+- Use command sudo ufw (port/number/here)
+  - To check the port status use command sudo ufw status 
+
+
+
+
+**Use the command sudo crontab -e**
+
+- Paste the following commands and make sure you change them accoringly 
+  - @Reboot path/to/elasticsearch/bin
+    -
+  - @Reboot
+  - @Reboot
+
+
+
+
+
+
+
 
 
 
