@@ -1,0 +1,42 @@
+input {
+        file {
+                start_position => "beginning"
+                path => "/home/ubuntu/data/usbdata.json"
+                sincedb_path => "/dev/null"
+        }
+}
+
+filter {
+        # Drop Elasticsearch Bulk API control lines
+        if ([message] =~ "{\"index") {
+                drop {}
+        }
+
+        json {
+                source => "message"
+                remove_field => "message"
+                # remove_field =>  "tcp" , "eth"
+        }
+
+        # Extract innermost network protocol
+        grok {
+                match => {
+                "[layers][frame][frame_frame_protocols]" => "%{WORD:protocol}$"
+                }
+        }
+
+    date {
+        match => [ "timestamp", "UNIX_MS" ]
+    }
+}
+
+output {
+        elasticsearch {
+                hosts => "localhost:9200"
+                index => "usbpackets"
+                document_type => "json_file"
+                manage_template => false
+        }
+        #stdout {}
+}
+
