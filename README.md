@@ -6,7 +6,7 @@ Creating a functional ELK stack that reads Egress data via USB on a Raspberry pi
 ### Recommended
 - Raspberry pi 4GB
 
-- 5 Volt 3 A power source 
+- 5 Volt 3 Amp power source 
 
 - 8 GB SD card
 
