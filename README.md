@@ -28,7 +28,7 @@ Creating a functional ELK stack that reads Egress data via USB on a Raspberry pi
 
 
 
-## **Setting up**
+## **Preparation**
 Personal I created separate directories for each part of my stack.
 
 You can do this via the mkdir command. (Ex: mkdir data, mkdir Elastic, mkdir Kibana, mkdir Logstash)
@@ -37,16 +37,20 @@ You can do this via the mkdir command. (Ex: mkdir data, mkdir Elastic, mkdir Kib
 You can find all the downloads for each system architecture at [This link](https://www.elastic.co/downloads/)
 
 Since we are on linux I will be using the curl command to download each part of the stack into their respective directorys 
+
+ *Please note that you will have to extract each file after each download with the follow command. Ex: tar -xf elasticsearch*
+
 - Elastic Search
-  - Curl -O https://tinyurl.com/y9p47ycu
+  - curl -O https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-7.10.1-linux-aarch64.tar.gz
 - Kibana 
-  - Curl -O https://tinyurl.com/y98v5eyk
+  - curl -O https://artifacts.elastic.co/downloads/kibana/kibana-7.10.1-linux-aarch64.tar.gz
 - LogStash 
-  - Curl -O https://tinyurl.com/yajvt5dd
+  - curl -O https://artifacts.elastic.co/downloads/logstash/logstash-7.10.1-linux-aarch64.tar.gz
+- Tshark (Feel free to use overs like Tcpdump but we will be using tshark)
+  - sudo apt install tshark
   
-  
-  
-  
+## **Configuring**
+Congrats! You have successfully aquired everything from stack to data capture. Now its time for the configuration part.
   
   
   
