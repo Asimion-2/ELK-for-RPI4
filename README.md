@@ -49,7 +49,7 @@ Since we are on linux I will be using the curl command to download each part of 
 - Tshark (Feel free to use others like Tcpdump but we will be using tshark)
   - sudo apt install tshark
   
-## **Configuring**
+## **Configuration**
 Congrats! You have successfully aquired everything from stack to data capture. Now its time for the configuration part.
 
 
