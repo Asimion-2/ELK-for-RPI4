@@ -20,7 +20,7 @@ Creating a functional ELK stack that reads Egress data via USB on a Raspberry pi
 ## **IMPORTANT**
 > Please make sure you have a Pi complatiable operation system flashed to your SD card.
 >
-> Here we are using Ubuntu 20.04 Server edition. [Download here](https://ubuntu.com/download/raspberry-pi)
+> Here we are using Ubuntu 20.04.1 LTS Server edition. [Download here](https://ubuntu.com/download/raspberry-pi)
 >
 > If havent already done this please download the ISO image and flash it to your SD card via flashing software for example Rufus. [Rufus Download](https://rufus.ie/)
 >
