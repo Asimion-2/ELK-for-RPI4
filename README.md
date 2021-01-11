@@ -111,9 +111,8 @@ First things first is we will need to open the port for kibana so we can access 
 
 - Paste the following commands and make sure you change them accoringly 
   - @Reboot path/to/elasticsearch/bin
-    -
-  - @Reboot
-  - @Reboot
+  - @Reboot path/to/kibana/bin
+  - @Reboot path/to/logstash/bin
 
 
 
